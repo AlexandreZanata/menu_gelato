@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/70de5f65-0fbb-4512-8e9b-72cc35a6bd87
+**URL**: 
 
 # Menu Gelato
 
