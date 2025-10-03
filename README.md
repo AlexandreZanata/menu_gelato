@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: 
+**URL**: https://menu-gelato.vercel.app/
 
 # Menu Gelato
 
