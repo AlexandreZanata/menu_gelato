@@ -62,7 +62,13 @@ const FlavorDetail = () => {
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Image */}
           <div className="aspect-square overflow-hidden rounded-2xl shadow-card">
-            <img src={item.images[0]} alt={item.name[language]} className="h-full w-full object-cover" />
+            <img 
+              src={item.images[0]} 
+              alt={item.name[language]} 
+              className="h-full w-full object-cover"
+              loading="eager"
+              decoding="async"
+            />
           </div>
 
           {/* Details */}

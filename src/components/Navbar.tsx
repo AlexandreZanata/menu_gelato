@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import { MobileMenu } from '@/components/MobileMenu';
 import { IceCreamCone, Languages, Moon, Sun } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
@@ -32,17 +33,17 @@ export const Navbar = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2 font-display text-2xl font-bold text-primary hover:opacity-80 transition-opacity">
           <IceCreamCone className="h-8 w-8" />
-          Gelato Dreams
+          <span className="hidden sm:inline">Gelato Dreams</span>
         </Link>
 
         <div className="flex items-center gap-1 md:gap-2">
           <Button variant="ghost" size="sm" asChild className="hidden md:inline-flex">
             <Link to="/">{t('nav.home')}</Link>
           </Button>
-          <Button variant="ghost" size="sm" asChild>
+          <Button variant="ghost" size="sm" asChild className="hidden md:inline-flex">
             <Link to="/flavors">{t('nav.flavors')}</Link>
           </Button>
-          <Button variant="ghost" size="sm" asChild className="hidden sm:inline-flex">
+          <Button variant="ghost" size="sm" asChild className="hidden md:inline-flex">
             <Link to="/build-sundae">{t('nav.build')}</Link>
           </Button>
           <Button variant="ghost" size="sm" asChild className="hidden md:inline-flex">
@@ -52,7 +53,8 @@ export const Navbar = () => {
             <Link to="/admin">{t('nav.admin')}</Link>
           </Button>
 
-          <div className="ml-2 flex items-center gap-1 border-l pl-2">
+          {/* Desktop Language and Theme toggles */}
+          <div className="ml-2 hidden md:flex items-center gap-1 border-l pl-2">
             <Button variant="ghost" size="icon" onClick={toggleLanguage} title="Toggle Language">
               <Languages className="h-5 w-5" />
               <span className="sr-only">Toggle Language</span>
@@ -62,6 +64,9 @@ export const Navbar = () => {
               <span className="sr-only">Toggle Theme</span>
             </Button>
           </div>
+
+          {/* Mobile Menu */}
+          <MobileMenu theme={theme} toggleTheme={toggleTheme} />
         </div>
       </div>
     </nav>

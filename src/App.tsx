@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import { MenuProvider } from "@/contexts/MenuContext";
+import { useScrollToTop } from "@/hooks/useScrollToTop";
 import Index from "./pages/Index";
 import Flavors from "./pages/Flavors";
 import FlavorDetail from "./pages/FlavorDetail";
@@ -15,6 +16,23 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const AppRoutes = () => {
+  useScrollToTop();
+  
+  return (
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/flavors" element={<Flavors />} />
+      <Route path="/flavor/:id" element={<FlavorDetail />} />
+      <Route path="/build-sundae" element={<BuildSundae />} />
+      <Route path="/specials" element={<Specials />} />
+      <Route path="/admin" element={<Admin />} />
+      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
@@ -23,16 +41,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/flavors" element={<Flavors />} />
-              <Route path="/flavor/:id" element={<FlavorDetail />} />
-              <Route path="/build-sundae" element={<BuildSundae />} />
-              <Route path="/specials" element={<Specials />} />
-              <Route path="/admin" element={<Admin />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <AppRoutes />
           </BrowserRouter>
         </MenuProvider>
       </LanguageProvider>
