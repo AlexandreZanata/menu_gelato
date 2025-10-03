@@ -73,7 +73,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Chocolate Belga', en: 'Belgian Chocolate' },
     shortDescription: { pt: 'Chocolate belga premium 70% cacau', en: 'Premium Belgian chocolate 70% cocoa' },
     fullDescription: { pt: 'Sorvete cremoso feito com chocolate belga premium de 70% cacau, sem adição de gordura vegetal', en: 'Creamy ice cream made with 70% cocoa premium Belgian chocolate, no vegetable fat added' },
-    images: ['https://images.unsplash.com/photo-1563805042-7684c019e1cb'],
+    images: ['https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 8.50 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 8.50 },
@@ -99,7 +99,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Morango Fresco', en: 'Fresh Strawberry' },
     shortDescription: { pt: 'Morangos frescos da estação', en: 'Fresh seasonal strawberries' },
     fullDescription: { pt: 'Feito com morangos frescos da estação, sem corantes artificiais', en: 'Made with fresh seasonal strawberries, no artificial colors' },
-    images: ['https://images.unsplash.com/photo-1501443762994-82bd5dace89a'],
+    images: ['https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 8.50 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 8.50 },
@@ -125,7 +125,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Pistache Siciliano', en: 'Sicilian Pistachio' },
     shortDescription: { pt: 'Pistaches da Sicília', en: 'Pistachios from Sicily' },
     fullDescription: { pt: 'Feito com pistaches importados da Sicília, sabor intenso e natural', en: 'Made with imported Sicilian pistachios, intense natural flavor' },
-    images: ['https://images.unsplash.com/photo-1497034825429-c343d7c6a68f'],
+    images: ['https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 10.00 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 10.00 },
@@ -151,7 +151,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Baunilha de Madagascar', en: 'Madagascar Vanilla' },
     shortDescription: { pt: 'Baunilha premium', en: 'Premium vanilla' },
     fullDescription: { pt: 'Baunilha premium de Madagascar com sementes reais', en: 'Premium Madagascar vanilla with real seeds' },
-    images: ['https://images.unsplash.com/photo-1488477181946-6428a0291777'],
+    images: ['https://images.unsplash.com/photo-1488477181946-6428a0291777?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 8.50 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 8.50 },
@@ -177,7 +177,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Manga Tropical', en: 'Tropical Mango' },
     shortDescription: { pt: 'Manga fresca e cremosa', en: 'Fresh creamy mango' },
     fullDescription: { pt: 'Sorvete de manga palmer, doce e refrescante', en: 'Palmer mango ice cream, sweet and refreshing' },
-    images: ['https://images.unsplash.com/photo-1570197788417-0e82375c9371'],
+    images: ['https://images.unsplash.com/photo-1570197788417-0e82375c9371?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 8.50 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 8.50 },
@@ -203,7 +203,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Coco Queimado', en: 'Toasted Coconut' },
     shortDescription: { pt: 'Coco ralado e tostado', en: 'Shredded toasted coconut' },
     fullDescription: { pt: 'Creme de coco com flocos de coco tostados na hora', en: 'Coconut cream with freshly toasted coconut flakes' },
-    images: ['https://images.unsplash.com/photo-1488900128323-21503983a07e'],
+    images: ['https://images.unsplash.com/photo-1488900128323-21503983a07e?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 8.50 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 8.50 },
@@ -229,7 +229,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Açaí com Banana', en: 'Açaí with Banana' },
     shortDescription: { pt: 'Açaí cremoso com banana', en: 'Creamy açaí with banana' },
     fullDescription: { pt: 'Polpa de açaí puro com banana orgânica', en: 'Pure açaí pulp with organic banana' },
-    images: ['https://images.unsplash.com/photo-1590440297991-d645ca5b6a88'],
+    images: ['https://images.unsplash.com/photo-1590440297991-d645ca5b6a88?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 9.00 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 9.00 },
@@ -255,7 +255,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Limão Siciliano', en: 'Sicilian Lemon' },
     shortDescription: { pt: 'Limão fresco e cítrico', en: 'Fresh citrus lemon' },
     fullDescription: { pt: 'Sorbet de limão siciliano, refrescante e natural', en: 'Sicilian lemon sorbet, refreshing and natural' },
-    images: ['https://images.unsplash.com/photo-1547558840-8ad19c7c2c6f'],
+    images: ['https://images.unsplash.com/photo-1547558840-8ad19c7c2c6f?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 7.50 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 7.50 },
@@ -281,7 +281,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Maracujá', en: 'Passion Fruit' },
     shortDescription: { pt: 'Maracujá azedo e doce', en: 'Sweet and tangy passion fruit' },
     fullDescription: { pt: 'Polpa de maracujá natural, equilíbrio perfeito entre doce e azedo', en: 'Natural passion fruit pulp, perfect balance of sweet and tangy' },
-    images: ['https://images.unsplash.com/photo-1601493700631-2b16ec4b4716'],
+    images: ['https://images.unsplash.com/photo-1601493700631-2b16ec4b4716?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 8.00 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 8.00 },
@@ -307,7 +307,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Cookies & Cream', en: 'Cookies & Cream' },
     shortDescription: { pt: 'Biscoitos Oreo triturados', en: 'Crushed Oreo cookies' },
     fullDescription: { pt: 'Creme de baunilha com pedaços generosos de biscoitos Oreo', en: 'Vanilla cream with generous chunks of Oreo cookies' },
-    images: ['https://images.unsplash.com/photo-1584888937655-27fcc2019f4d'],
+    images: ['https://images.unsplash.com/photo-1584888937655-27fcc2019f4d?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 9.00 },
     sizes: [
       { label: { pt: '1 Bola', en: '1 Scoop' }, scoops: 1, price: 9.00 },
@@ -334,7 +334,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Sundae Brownie', en: 'Brownie Sundae' },
     shortDescription: { pt: 'Brownie quente com sorvete', en: 'Hot brownie with ice cream' },
     fullDescription: { pt: 'Brownie de chocolate quente com 2 bolas de sorvete, calda de chocolate e chantilly', en: 'Hot chocolate brownie with 2 scoops ice cream, chocolate sauce and whipped cream' },
-    images: ['https://images.unsplash.com/photo-1563729784474-d77dbb933a9e'],
+    images: ['https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 0 },
     sizes: [{ label: { pt: 'Porção', en: 'Serving' }, scoops: 2, price: 28.00 }],
     containerOptions: [{ type: 'cup', price: 0 }],
@@ -352,7 +352,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Banana Split', en: 'Banana Split' },
     shortDescription: { pt: 'Clássico banana split', en: 'Classic banana split' },
     fullDescription: { pt: 'Banana fatiada com 3 bolas de sorvete, caldas variadas, chantilly e cerejas', en: 'Sliced banana with 3 scoops ice cream, assorted sauces, whipped cream and cherries' },
-    images: ['https://images.unsplash.com/photo-1567206563064-6f60f40a2b57'],
+    images: ['https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 0 },
     sizes: [{ label: { pt: 'Porção', en: 'Serving' }, scoops: 3, price: 32.00 }],
     containerOptions: [{ type: 'cup', price: 0 }],
@@ -370,7 +370,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Milkshake de Chocolate', en: 'Chocolate Milkshake' },
     shortDescription: { pt: 'Cremoso milkshake', en: 'Creamy milkshake' },
     fullDescription: { pt: 'Milkshake cremoso de chocolate belga com chantilly', en: 'Creamy Belgian chocolate milkshake with whipped cream' },
-    images: ['https://images.unsplash.com/photo-1572490122747-3968b75cc699'],
+    images: ['https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 0 },
     sizes: [
       { label: { pt: 'Pequeno', en: 'Small' }, scoops: 1, price: 15.00 },
@@ -392,7 +392,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Float de Morango', en: 'Strawberry Float' },
     shortDescription: { pt: 'Refrigerante com sorvete', en: 'Soda with ice cream' },
     fullDescription: { pt: 'Refrigerante de morango com bola de sorvete de baunilha', en: 'Strawberry soda with vanilla ice cream scoop' },
-    images: ['https://images.unsplash.com/photo-1541518763669-27fef04b14ea'],
+    images: ['https://images.unsplash.com/photo-1541518763669-27fef04b14ea?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 0 },
     sizes: [{ label: { pt: 'Médio', en: 'Medium' }, scoops: 1, price: 14.00 }],
     containerOptions: [{ type: 'cup', price: 0 }],
@@ -410,7 +410,7 @@ export const menuItems: MenuItem[] = [
     name: { pt: 'Kids Copinho', en: 'Kids Cup' },
     shortDescription: { pt: 'Porção infantil', en: 'Kids portion' },
     fullDescription: { pt: 'Porção especial para crianças com 1 bola de sorvete e cobertura', en: 'Special kids portion with 1 scoop ice cream and topping' },
-    images: ['https://images.unsplash.com/photo-1579954115545-a95591f28bfc'],
+    images: ['https://images.unsplash.com/photo-1579954115545-a95591f28bfc?w=800&q=80'],
     pricePerScoop: { currency: 'BRL', value: 0 },
     sizes: [{ label: { pt: 'Kids', en: 'Kids' }, scoops: 1, price: 6.50 }],
     containerOptions: [

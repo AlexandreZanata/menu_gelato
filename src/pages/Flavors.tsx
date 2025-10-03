@@ -24,14 +24,27 @@ const Flavors = () => {
     { id: 'dairy-free', label: t('flavors.dairyfree') },
   ];
 
-  const filteredItems = useMemo(() => {
-    let items = menuItems.filter(item => item.available && item.categoryId === 'cat-1');
+  // Map category slugs to category IDs
+  const categorySlugToId: Record<string, string> = {
+    'flavors': 'cat-1',
+    'sundaes': 'cat-2',
+    'milkshakes': 'cat-3',
+    'toppings': 'cat-4',
+    'kids': 'cat-5',
+  };
 
+  const filteredItems = useMemo(() => {
+    let items = menuItems.filter(item => item.available);
+
+    // Filter by category if provided
     if (categorySlug) {
-      items = items.filter(item => {
-        const category = item.categoryId;
-        return category.includes(categorySlug);
-      });
+      const categoryId = categorySlugToId[categorySlug];
+      if (categoryId) {
+        items = items.filter(item => item.categoryId === categoryId);
+      }
+    } else {
+      // If no category, show only classic flavors by default
+      items = items.filter(item => item.categoryId === 'cat-1');
     }
 
     if (activeFilter !== 'all') {
